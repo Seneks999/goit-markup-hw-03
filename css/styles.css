@@ -4,12 +4,38 @@ body {
   background-color: #ffffff;
 }
 
+ul,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
 
 ul {
   list-style-type: none;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0px;
+  width: 115px;
 }
 
 .logo {
@@ -24,6 +50,15 @@ ul {
 
 .logo-studio {
   color: #2e2f42;
+}
+
+.nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 40px;
+  width: 261px;
 }
 
 .nav a {
@@ -53,10 +88,10 @@ ul {
 }
 
 .contact-list {
-  color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .contact-list:hover,
@@ -73,9 +108,9 @@ ul {
 .title-one {
   font-size: 56px;
   line-height: 1.07;
-  color: #ffffff;
-  text-align: center;
   letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
 }
 
 .button {
@@ -85,13 +120,28 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
   background: #4d5ae5;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .button:hover,
 .button:focus {
   background: #404bbf;
+}
+
+.features {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  width: calc((100% - 72px) / 4);
 }
 
 .features-title {
@@ -123,7 +173,19 @@ ul {
 }
 
 .team-li {
-  background-color: #ffffff;
+  background-color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  width: 264px;
+  height: 380px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team-name {
   font-size: 20px;
@@ -149,6 +211,18 @@ ul {
   color: #2e2f42;
 }
 
+.portfolio-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  width: 360px;
+}
 .portfolio-service {
   font-size: 20px;
   line-height: 1.2;
