@@ -356,6 +356,7 @@ ul {
 
 .logo-studio-footer {
   color: #f4f4fd;
+  display: inline-block;
 }
 
 .footer-call {
